@@ -1,0 +1,36 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.father {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.box {
+    height: 400px;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:first-child {
+    background-color: tomato;
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 500px; */
+
+    flex: 1 0 500px;
+}
+
+.box:last-child {
+    background-color: teal;
+    flex-grow: 1;
+}
