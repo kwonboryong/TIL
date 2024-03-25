@@ -1,0 +1,99 @@
+
+// <반응형 디자인 만들기>
+// variable 추가하기 -> 기기의 화면 크기를 나타냄
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1200px;
+
+
+@mixin smallDevice {
+    @media screen and (min-width: $breakpoint-sm) {
+        @content;
+    }
+}
+
+@mixin mediumDevice {
+    @media screen and (min-width: $breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin largeDevice {
+    @media screen and (min-width: $breakpoint-lg) {
+        @content;
+    }
+}
+
+@mixin xlDevice {
+    @media screen and (min-width: $breakpoint-xl) {
+        @content;
+    }
+}
+
+body {
+    @include smallDevice {
+        background-color: blue;
+    }
+
+    @include mediumDevice {
+        background-color: red;
+    }
+
+    @include largeDevice {
+        background-color: purple;
+    }
+
+    @include xlDevice {
+        background-color: pink;
+    }
+}
+
+// Responsive Mixins--------------------
+// @mixin alert($bgColor, $borderColor) {
+//     background-color: $bgColor;
+//     margin: 10px;
+//     padding: 10px 20px;
+//     border-radius: 10px;
+//     border: 1px dashed $borderColor;
+//     @content;
+// }
+
+// .success {
+//     @include alert(green, blue) {
+//         font-size: 12px;
+//     }
+// }
+
+// .error {
+//     @include alert(tomato, white) {
+//         text-decoration: underline;
+//     }
+// }
+
+// .warning {
+//     @include alert(yellow, black) {
+//         text-transform: uppercase;
+//     }
+// }
+
+// @mixin--------------------------------
+// @mixin alert($bgColor, $borderColor) {
+//     background-color: $bgColor;
+//     margin: 10px;
+//     padding: 10px 20px;
+//     border-radius: 10px;
+//     border: 1px dashed $borderColor;
+// }
+
+// .success {
+//     @include alert(green, blue);
+// }
+
+// .error {
+//     @include alert(tomato, white);
+// }
+
+// .warning {
+//     @include alert(yellow, black);
+// }
