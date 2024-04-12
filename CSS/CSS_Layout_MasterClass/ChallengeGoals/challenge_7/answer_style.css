@@ -1,0 +1,90 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  background-color: black;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+}
+
+.options {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.selection {
+  background-color: white;
+  padding: 10px;
+  flex: auto;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.selection:last-child {
+  border-right: none;
+}
+
+select {
+  font-size: 14px;
+  border: none;
+  flex-grow: 5;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 4px;
+}
+
+article {
+  background-color: white;
+  gap: 20px 0;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
+}
+
+.description,
+a {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.year,
+a {
+  display: flex;
+  align-items: flex-end;
+}
+
+.thumbnails {
+  grid-column: span 2;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: black;
+}
+
