@@ -5,10 +5,10 @@ Today I Learned
 
 <br/>
 
-- HTML
+- [HTML]
 - CSS
 - Javascript
-- React
+- [React](React)
 
 
 
