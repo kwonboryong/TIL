@@ -5,9 +5,7 @@ Today I Learned
 
 <br/>
 
-- [HTML]
-- CSS
-- Javascript
+- [CSS](CSS/CSS_Layout_MasterClass)
 - [React](React)
 
 
